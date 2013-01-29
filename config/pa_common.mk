@@ -26,12 +26,12 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
 # Bring in camera effects
-PRODUCT_COPY_FILES +=  \
-    vendor/pa/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/pa/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+#PRODUCT_COPY_FILES +=  \
+#    vendor/pa/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+#    vendor/pa/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Bring in all video files
-$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
+#$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # Exclude prebuilt paprefs from builds if the flag is set
 ifneq ($(PREFS_FROM_SOURCE),true)
