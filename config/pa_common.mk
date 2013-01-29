@@ -25,6 +25,10 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/pa/prebuilt/common/bin/50-backupScript.sh:system/addon.d/50-backupScript.sh
 
+# APNs
+PRODUCT_COPY_FILES += \
+    vendor/pa/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Bring in camera effects
 #PRODUCT_COPY_FILES +=  \
 #    vendor/pa/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
@@ -50,10 +54,6 @@ else
     PRODUCT_COPY_FILES += \
         vendor/pa/prebuilt/common/bootanimation/XHDPI.zip:system/media/bootanimation.zip
 endif
-
-# ParanoidAndroid common packages
-PRODUCT_PACKAGES += \
-    ParanoidWallpapers
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
