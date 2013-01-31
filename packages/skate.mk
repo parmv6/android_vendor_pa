@@ -2,5 +2,6 @@
 PRODUCT_PACKAGES += \
     Music \
     MusicFX \
-    Email
+    Email \
+    Stk
     
