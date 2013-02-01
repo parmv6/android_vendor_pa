@@ -19,10 +19,13 @@ ifeq (pa_skate,$(TARGET_PRODUCT))
 PARANOID_BOOTANIMATION_NAME := HDPI
 
 # OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_hdpi
+OVERLAY_TARGET := pa_skate
 
 # Build paprefs from sources
 PREFS_FROM_SOURCE ?= false
+
+# Developer version
+DEVELOPER_VERSION := true
 
 # Include ParanoidAndroid common configuration
 include vendor/pa/config/pa_common.mk
