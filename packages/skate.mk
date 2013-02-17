@@ -3,5 +3,6 @@ PRODUCT_PACKAGES += \
     Music \
     MusicFX \
     Email \
-    Stk
+    Stk \
+    e2fsprogs
     
