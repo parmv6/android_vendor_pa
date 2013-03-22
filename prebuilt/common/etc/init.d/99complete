@@ -1,0 +1,4 @@
+#!/system/bin/sh
+
+sync;
+setprop ro.filesystem.ready 1;

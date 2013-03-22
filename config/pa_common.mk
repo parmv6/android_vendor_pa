@@ -11,7 +11,8 @@ PRODUCT_COPY_FILES += \
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/pa/prebuilt/common/etc/init.pa.rc:root/init.pa.rc
+    vendor/pa/prebuilt/common/etc/init.pa.rc:root/init.pa.rc \
+    vendor/pa/prebuilt/common/etc/init.d/99complete:system/etc/init.d/99complete
 
 # userinit support
 PRODUCT_COPY_FILES += \
