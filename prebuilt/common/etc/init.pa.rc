@@ -11,8 +11,6 @@ on post-fs-data
     chmod 0771 /cache/dalvik-cache
 
 on boot
-    # Run sysinit
-    start sysinit
 
     chown system system /sys/block/mmcblk0/queue/scheduler
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
@@ -26,11 +24,6 @@ on boot
     chmod 0664 /sys/kernel/mm/ksm/run
     write /sys/kernel/mm/ksm/sleep_millisecs 1500
     write /sys/kernel/mm/ksm/pages_to_scan 256
-
-# sysinit (/system/etc/init.d)
-service sysinit /system/bin/sysinit
-    user root
-    oneshot
 
 # Adb over Network
 on property:service.adb.tcp.port=5555
