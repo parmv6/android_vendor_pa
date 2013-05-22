@@ -1,8 +1,8 @@
 # Set audio
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.config.ringtone=Themos.ogg \
-  ro.config.notification_sound=Proxima.ogg \
-  ro.config.alarm_alert=Cesium.ogg
+  ro.config.ringtone=Ring_Digital_02.ogg \
+  ro.config.notification_sound=F1_New_SMS.ogg \
+  ro.config.alarm_alert=Alarm_Beep_03.ogg
 
 # Copy specific ROM files
 PRODUCT_COPY_FILES += \
@@ -87,7 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/pa/prebuilt/$(PA_CONF_SOURCE).conf:system/etc/paranoid/backup.conf
 
 PA_VERSION_MAJOR = 3
-PA_VERSION_MINOR = 1
+PA_VERSION_MINOR = 5
 PA_VERSION_MAINTENANCE = 5
 PA_PREF_REVISION = 1
 
@@ -106,10 +106,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.pa.version=$(VERSION) \
   ro.papref.revision=$(PA_PREF_REVISION)
 
-# goo.im properties
-ifneq ($(DEVELOPER_VERSION),true)
-    PRODUCT_PROPERTY_OVERRIDES += \
-      ro.goo.developerid=paranoidandroid \
-      ro.goo.rom=paranoidandroid \
-      ro.goo.version=$(shell date +%s)
-endif
+# Setup OTA with goo.im
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=zeelog \
+    ro.goo.board=blade \
+    ro.goo.rom=pa3_blade \
+    ro.goo.version=
