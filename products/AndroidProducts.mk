@@ -1,5 +1,5 @@
 ifeq (pa_grouper,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_grouper.mk
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_blade.mk
 endif
 ifeq (pa_i9100,$(TARGET_PRODUCT))
     PRODUCT_MAKEFILES += $(LOCAL_DIR)/pa_i9100.mk
