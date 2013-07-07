@@ -111,4 +111,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=zeelog \
     ro.goo.board=blade \
     ro.goo.rom=pa3_blade \
-    ro.goo.version=12
+    ro.goo.version=13
