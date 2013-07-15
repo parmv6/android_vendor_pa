@@ -4,5 +4,6 @@ PRODUCT_PACKAGES += \
     MusicFX \
     Email \
     Stk \
+    CMFileManager \
     e2fsprogs
     

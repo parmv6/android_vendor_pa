@@ -34,7 +34,7 @@ include vendor/pa/config/pa_common.mk
 $(call inherit-product, device/zte/blade/blade.mk)
 
 # Product Package Extras - Repos can be added manually or via addprojects.py
--include vendor/pa/packages/skate.mk
+-include vendor/pa/packages/blade.mk
 
 # Override AOSP build properties
 PRODUCT_NAME := pa_blade
