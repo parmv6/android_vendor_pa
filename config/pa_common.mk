@@ -84,7 +84,7 @@ PRODUCT_COPY_FILES += \
 
 PA_VERSION_MAJOR = 3
 PA_VERSION_MINOR = 6
-PA_VERSION_MAINTENANCE = 7
+PA_VERSION_MAINTENANCE = 8
 PA_PREF_REVISION = 1
 
 TARGET_CUSTOM_RELEASETOOL :=source vendor/pa/tools/squisher
@@ -107,4 +107,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=zeelog \
     ro.goo.board=blade \
     ro.goo.rom=pa3_blade \
-    ro.goo.version=13
+    ro.goo.version=14
